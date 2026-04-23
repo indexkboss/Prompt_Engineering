@@ -6,5 +6,11 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "ipykernel>=7.2.0",
+    "langchain>=1.2.15",
+    "langchain-groq>=1.1.2",
+    "langchain-ollama>=1.1.0",
+    "langchain-openai>=1.2.0",
+    "openai>=2.32.0",
+    "python-dotenv>=1.2.2",
     "tiktoken>=0.12.0",
 ]
