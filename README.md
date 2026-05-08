@@ -4,13 +4,13 @@ Apprentissage des techniques d'interaction avec plusieurs LLMs (OpenAI, Ollama, 
 
 ---
 
-## 🎯 Objectif du projet
+### 🎯 Objectif du projet
 
 Ce projet a pour but de comprendre et expérimenter le Prompt Engineering ainsi que l’utilisation de différents LLMs (locaux et cloud) à travers Python.
 
 ---
 
-## 📌 Contenu du projet
+### 📌 Contenu du projet
 
 - Tokenisation
 - Interagir avec un LLM OpenAI (via OpenRouter – solution gratuite)
@@ -20,7 +20,7 @@ Ce projet a pour but de comprendre et expérimenter le Prompt Engineering ainsi 
 - Image-to-Text (description d'une image par un LLM)
 - Cas d'usage : **Analyse de sentiment** (Sentiment Analysis)
 
-### Techniques de Prompt Engineering utilisées
+#### Techniques de Prompt Engineering utilisées
 
 - Simple Prompt (Text-to-Text)
 - Zero Shot Prompt
@@ -33,10 +33,10 @@ Ce projet a pour but de comprendre et expérimenter le Prompt Engineering ainsi 
 
 ---
 
-## 🔧 Prérequis
+### 🔧 Prérequis
 
-- **Python** 3.10 ou 3.11 recommandé  
-  (testé également sur Python 3.13)
+- **Python** >= 3.13  
+  (projet testé sur Python 3.13)
 
 - **Ollama** installé localement  
   👉 https://ollama.com
@@ -48,23 +48,19 @@ Ce projet a pour but de comprendre et expérimenter le Prompt Engineering ainsi 
 
 ---
 
-## 📁 Structure du projet
+### 📦 Installation et configuration
+
+Ce projet utilise **uv** pour gérer les dépendances Python.
+
+#### 1. Installer uv (si nécessaire)
 
 ```bash
-Prompt_Engineering/
-│
-├── notebook.ipynb
-├── image.png
-├── requirements.txt
-├── .env
-└── README.md
+pip install uv
 ```
 
 ---
 
-# 🚀 Installation et configuration
-
-## 1. Cloner le dépôt
+#### 2. Cloner le projet
 
 ```bash
 git clone https://github.com/indexkboss/Prompt_Engineering.git
@@ -73,15 +69,15 @@ cd Prompt_Engineering
 
 ---
 
-## 2. Installer les dépendances
+#### 3. Installer les dépendances
 
 ```bash
-pip install -r requirements.txt
+uv sync
 ```
 
 ---
 
-## 3. Configurer les clés API
+#### 4. Configurer les clés API
 
 Créer un fichier `.env` à la racine du projet :
 
@@ -94,7 +90,7 @@ OPENAI_API_KEY=your_key
 
 ---
 
-## 4. Installer un modèle Ollama
+#### 5. Installer un modèle Ollama
 
 Exemple :
 
@@ -106,7 +102,7 @@ Puis lancer Ollama localement.
 
 ---
 
-# 🧠 Cas d’usage présents dans le notebook
+### 🧠 Cas d’usage présents dans le notebook
 
 - Génération de texte
 - Analyse de sentiment
@@ -117,16 +113,16 @@ Puis lancer Ollama localement.
 
 ---
 
-# ⚠️ Remarques
+### ⚠️ Remarques
 
 - Ne jamais publier le fichier `.env`
 - Ajouter `.env` dans le `.gitignore`
-- Certaines fonctionnalités OpenAI peuvent nécessiter des modèles payants
-- Les performances peuvent varier selon le modèle utilisé
+- Certaines fonctionnalités peuvent dépendre de clés API payantes (OpenAI)
+- Les performances varient selon le modèle utilisé
 
 ---
 
-## 👨‍💻 Auteur
+### 👨‍💻 Auteur
 
 Khadija Bossony  
 https://github.com/indexkboss  
@@ -135,7 +131,7 @@ Projet réalisé dans le cadre d’un apprentissage du Prompt Engineering et des
 
 ---
 
-## 🙏 Crédits
+### 🙏 Crédits
 
 Ce projet s’inspire d’une vidéo YouTube réalisée par le Professeur Mohamed YOUSSFI.
 
